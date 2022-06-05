@@ -3,7 +3,11 @@ spring:
     name: service-assurance
   cloud:
     config:
-    uri: http://localhost:8090
+      uri: http://localhost:8090
   profiles:
     active: dev
+  data:
+    mongodb:
+      uri: mongodb+srv://rbenitec:rjbc2095@cluster0.zaixl.mongodb.net/?retryWrites=true&w=majority
+      database: assurance-db
 eureka.client.health-check.enable: true
