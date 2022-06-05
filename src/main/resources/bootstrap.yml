@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-assurance
+  cloud:
+    config:
+    uri: http://localhost:8090
+  profiles:
+    active: dev
+eureka.client.health-check.enable: true
